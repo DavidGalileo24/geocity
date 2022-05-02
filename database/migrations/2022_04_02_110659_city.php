@@ -12,6 +12,7 @@ class City extends Migration{
             $table->string('name', 75);
             $table->string('country', 50);
             $table->string('latitude', 20);
+            $table->string('longitude', 20);
             $table->integer('score');
             $table->timestamps();
         });

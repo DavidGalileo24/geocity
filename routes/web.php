@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CityController;
+use App\Models\City;
 /** @var \Laravel\Lumen\Routing\Router $router */
 
 /*
@@ -16,3 +18,5 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/sugerencias', 'CityController@readCity');
