@@ -20,3 +20,11 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/sugerencias', 'CityController@readCity');
+
+$router->post('/sugerencias/nueva-ciudad', 'CityController@saveCity');
+
+$router->get('/sugerencias/{id}', 'CityController@getID');
+
+$router->delete('/sugerencias//{id}', 'CityController@deleteCity');
+
+$router->get('/sugerencias/{id}', 'CityController@updateCity');
