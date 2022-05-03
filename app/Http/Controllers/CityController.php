@@ -11,9 +11,19 @@ class CityController extends Controller{
         @params: -
         @return: Muestra todos los datos de la tabla ciudad en formato json
     */
-    public function readCity(){
-       $infoCity = City::all();
-       return response()->json($infoCity);
+    public function readCity(Request $request){
+       
+        if($request->has(key: 'q')){
+            $city = new City();
+            return $city->where('name', 'like', '%' . $request->q . '%')
+                        ->orWhere('longitude', 'like', '%' . $request->q . '%')
+                        ->orWhere('latitude', 'like', '%' . $request->q . '%')->get();
+        }else{
+            $infoCity = City::all();
+             return response()->json($infoCity);
+        }
+
+      
     }
 
 
