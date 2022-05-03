@@ -25,28 +25,28 @@
         <tbody>
             <tr>
                <td>Visualizar todos los datos:</td>
-               <td><a href="" style="cursor:pointer;">http://localhost:8000/sugerencias</a></td>
+               <td><a href="/sugerencias" style="cursor:pointer;" target="blank">http://localhost:8000/sugerencias</a></td>
             </tr>
             <tr>
                 <td>Mostrar datos mediante por su ID:</td>
-                <td><a href="" style="cursor:pointer;">http://localhost:8000/sugerencias/4</a></td>
+                <td><a href="http://localhost:8000/sugerencias/4" style="cursor:pointer;" target="blank">http://localhost:8000/sugerencias/4</a></td>
              </tr>
             <tr>
                 <td>Mostrar datos mediante el nombre de ciudad:</td>
-                <td><a href="" style="cursor:pointer;">http://localhost:8000/sugerencias?q=roma</a></td>
+                <td><a href="http://localhost:8000/sugerencias?q=roma" style="cursor:pointer;" target="blank">http://localhost:8000/sugerencias?q=roma</a></td>
              </tr>
              <tr>
                 <td>Mostrar datos mediante la latitud:</td>
-                <td><a href="" style="cursor:pointer;">http://localhost:8000/sugerencias?q=N415330</a></td>
+                <td><a href="http://localhost:8000/sugerencias?q=N415330" style="cursor:pointer;" target="blank">http://localhost:8000/sugerencias?q=N415330</a></td>
              </tr>
              <tr>
                 <td>Mostrar datos mediante la longitud:</td>
-                <td><a href="" style="cursor:pointer;">localhost:8000/sugerencias?q=E123040</a></td>
+                <td><a href="localhost:8000/sugerencias?q=E123040" style="cursor:pointer;" target="blank">localhost:8000/sugerencias?q=E123040</a></td>
              </tr>    
                       
              <tr>
                 <td>Mostrar datos mediante el nombre de ciudad, longitud y latitud:</td>
-                <td><a href="">http://localhost:8000/sugerencias?q=roma&N415330&E123040</a></td>
+                <td><a href="http://localhost:8000/sugerencias?q=roma&N415330&E123040" target="blank">http://localhost:8000/sugerencias?q=roma&N415330&E123040</a></td>
              </tr>
              
         </tbody>
