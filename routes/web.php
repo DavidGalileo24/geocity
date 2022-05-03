@@ -16,8 +16,10 @@ use App\Models\City;
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return view('home');
 });
+
+
 
 $router->get('/sugerencias', 'CityController@readCity');
 
@@ -27,4 +29,4 @@ $router->get('/sugerencias/{id}', 'CityController@getID');
 
 $router->delete('/sugerencias//{id}', 'CityController@deleteCity');
 
-$router->get('/sugerencias/{id}', 'CityController@updateCity');
+$router->put('/sugerencias/{id}', 'CityController@updateCity');
